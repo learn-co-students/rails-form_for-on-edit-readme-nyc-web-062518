@@ -761,3 +761,187 @@ Processing by PostsController#edit as HTML
   [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
   Rendered posts/edit.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 347ms (Views: 318.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2018-07-21 22:10:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.4ms)
+Completed 200 OK in 18ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/1" for ::1 at 2018-07-21 22:10:38 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 357ms (Views: 342.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2018-07-21 22:10:39 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/edit.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/danielran/Desktop/mod2/rails/rails-form_for-on-edit-readme-nyc-web-062518/app/views/posts/edit.html.erb:3: syntax error, unexpected keyword_do_block
+...er.append=  form_for(@post), do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/danielran/Desktop/mod2/rails/rails-form_for-on-edit-readme-nyc-web-062518/app/views/posts/edit.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/edit.html.erb:3: syntax error, unexpected keyword_do_block
+  app/views/posts/edit.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.7ms)
+
+
+Started GET "/posts" for ::1 at 2018-07-21 22:10:43 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2018-07-21 22:10:51 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/edit.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/danielran/Desktop/mod2/rails/rails-form_for-on-edit-readme-nyc-web-062518/app/views/posts/edit.html.erb:3: syntax error, unexpected keyword_do_block
+...er.append=  form_for(@post), do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/danielran/Desktop/mod2/rails/rails-form_for-on-edit-readme-nyc-web-062518/app/views/posts/edit.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/posts/edit.html.erb:3: syntax error, unexpected keyword_do_block
+  app/views/posts/edit.html.erb:13: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/danielran/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.10/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.1ms)
+
+
+Started GET "/posts/1/edit" for ::1 at 2018-07-21 22:11:51 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/edit.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/1" for ::1 at 2018-07-21 22:12:00 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zftVqm+Xz1kF6n79xY4XtY4o/wIzJiB8CChnsitVDzZYVPmHQ9lCWvj3KNUuz0g4Pru4UWfex1zITxb3Rgd1OA==", "post"=>{"title"=>"apple", "description"=>"banana"}, "commit"=>"Update Post", "id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2018-07-22 02:12:00.991348"], ["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/posts/1" for ::1 at 2018-07-21 22:12:00 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for ::1 at 2018-07-21 22:12:03 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts" for ::1 at 2018-07-21 22:12:09 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/1" for ::1 at 2018-07-21 22:12:12 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for ::1 at 2018-07-21 22:12:14 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-07-21 22:12:20 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/2" for ::1 at 2018-07-21 22:12:26 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FieeklRb47MWm8nFlHxXt9jNEzifPnGoqcg+zlbryZWDiDK/eBVusOuGn+1/PQg6aF5Ua8vGlohpr0+LO7mzmw==", "post"=>{"title"=>"banan", "description"=>"apple"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?[0m  [["title", nil], ["description", nil], ["updated_at", "2018-07-22 02:12:26.853126"], ["id", 2]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/2" for ::1 at 2018-07-21 22:12:26 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for ::1 at 2018-07-21 22:12:28 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2018-07-21 22:16:07 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/edit.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 13.5ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/posts/2" for ::1 at 2018-07-21 22:16:12 -0400
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tek9bTzTVffLa703ioPW+/aPy0ilEXkqL8+hIYN9NjQgRpFAEJ3Y9DZ26x9hwol2RhyMG/HpngrvqNBk7i9MOg==", "post"=>{"title"=>"jona", "description"=>"bon"}, "commit"=>"Update Post", "id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "posts" SET "title" = ?, "description" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["title", "jona"], ["description", "bon"], ["updated_at", "2018-07-22 02:16:12.542210"], ["id", 2]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 3ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/2" for ::1 at 2018-07-21 22:16:12 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.1ms)
